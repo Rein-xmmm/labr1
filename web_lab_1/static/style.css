@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Изменен шрифт */
+  margin: 0; /* Убран margin для гибкости */
+  background-color: #f8f9fa; /* Светлый фон */
+  color: #343a40; /* Темный цвет текста */
+  line-height: 1.7;
+}
+
+/* Обёртка сайта */
+.container {
+  width: 90%;
+  max-width: 1200px; /* Ограничение ширины */
+  margin: 0 auto; /* Центрирование */
+  padding: 20px 0;
+}
+
+/* Стили для навигации */
+nav {
+    background: linear-gradient(45deg, #007bff, #6610f2); /* Градиент */
+  padding: 10px 0; /* Сделано меньше отступа */
+  margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .container {
+    display: flex; /* Для выравнивания элементов в ряд */
+    justify-content: space-between;
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500; /* Жирность шрифта */
+  transition: color 0.3s; /* Плавный переход цвета */
+}
+
+nav a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* Стили для главного блока */
+main {
+  margin-top: 20px;
+  padding: 30px; /* Увеличен отступ */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Усилена тень */
+  border-radius: 8px; /* Закругленные края */
+}
+
+h1,
+h2 {
+  font-weight: 700; /* Жирный заголовок */
+  margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #eee; /* Линия ниже заголовка */
+  padding-bottom: 10px;
+}
+/* Стили для списка товаров */
+.products-list {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-item {
+    width: 280px; /* Фиксированная ширина */
+    margin: 15px; /* Отступ между товарами */
+    padding: 20px;
+    border: 1px solid #eee; /* Светлая рамка */
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация */
+
+}
+.product-item:hover {
+    transform: translateY(-5px); /* Небольшое поднятие */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Тень при наведении */
+}
+.product-image {
+  max-width: 100%; /* Адаптивность изображений */
+  max-height: 180px;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Скругление краев */
+    object-fit: cover; /* Обрезка изображений, чтобы они не растягивались */
+}
+
+/* Стили для ввода текста */
+input[type="text"] {
+  padding: 12px; /* Больше отступы */
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Закругление краев */
+  width: calc(100% - 24px);
+}
+
+textarea {
+   width: calc(100% - 24px);
+  min-height: 150px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Закругление */
+}
+/* Стили для кнопок */
+button {
+  padding: 12px 24px;
+  background-color: #007bff; /* Синий цвет */
+  color: white; /* Белый текст */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+    transition: background-color 0.3s; /* Плавное изменение цвета */
+}
+
+button:hover {
+  background-color: #0056b3; /* Темный синий при наведении */
+}
+/* Стили для нижнего колонтитула */
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+  text-align: center;
+  color: #777;
+}

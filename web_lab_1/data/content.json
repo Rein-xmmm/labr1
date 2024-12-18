@@ -1,0 +1,35 @@
+{
+    "site_title": "Мир Погонажа",
+    "company_name": "ООО 'Погонаж-мастер'",
+    "slogan": "Качество в каждом метре!",
+    "about_us": "Мы - производители высококачественных погонажных изделий из дерева и МДФ. Наша миссия - обеспечить наших клиентов надежной и красивой продукцией.",
+    "products": [
+        {
+            "name": "Террасная доска",
+            "description": "Это настил из плотно прилегающих друг к другу планок, предназначенный для уличного применения.",
+            "material": "Лиственица",
+            "image": "/static/tdoska.jpg",
+            "link":"https://stroyizlesa.ru/wa-data/public/shop/products/63/10/1063/images/1558/000_original.0x500.jpg"
+        },
+        {
+            "name": "Доска пола",
+            "description": "Погонажное изделие, изготавливаемое из цельных досок посредством деревообрабатывающего высокоточного оборудования.",
+            "material": "Сосна",
+            "image": "/static/dpola.jpg",
+            "link":"https://garantwood.ru/assets/cache/images/assets/galleries/50/dscf8480-350x350-5a1.jpg"
+        },
+        {
+            "name": "Палубная доска",
+            "description": "Финишное напольное покрытие из натурального дерева. При изготовлении используются твёрдые породы с плотной, устойчивой к повышенной влажности, древесиной.",
+             "material": "Лиственица",
+             "image": "/static/palub.jpg",
+             "link":"https://a.allegroimg.com/original/112d19/3f61cbe84ff387036be5f6608e4d/Deska-tarasowa-modrzew"
+         }
+        ],
+    "contact_info": {
+        "address": "ул. Строителей, 1",
+        "phone": "+79998765432",
+        "email": "info@pogonazh.ru",
+        "site_link": "https://www.pogonazh.ru"
+    }
+}

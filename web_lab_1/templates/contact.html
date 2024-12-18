@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ site_title }} - Контакты{% endblock %}
+
+{% block content %}
+    <h2>Контактная информация</h2>
+    <p>Адрес: {{ contact_info.address }}</p>
+    <p>Телефон: {{ contact_info.phone }}</p>
+    <p>Email: {{ contact_info.email }}</p>
+    <p><a href="{{ contact_info.site_link }}" target="_blank">Перейти на наш сайт</a></p>
+      <form method="get">
+         <input type="text" name="search" placeholder="Поиск...">
+         <input type="hidden" name="page" value="contact">
+         <button type="submit">Поиск</button>
+     </form>
+{% endblock %}

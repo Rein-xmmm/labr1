@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ site_title }} - Продукция{% endblock %}
+
+{% block content %}
+    <h2>Наша продукция</h2>
+    <div class="products-list">
+        {% for product in products %}
+          <div class="product-item">
+            <a href="{{ product.link }}" target="_blank">
+                <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image">
+                <h3>{{ product.name }}</h3>
+            </a>
+            <p>{{ product.description }}</p>
+            <p>Материал: {{ product.material }}</p>
+
+          </div>
+        {% endfor %}
+    </div>
+{% endblock %}
